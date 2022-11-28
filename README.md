@@ -32,3 +32,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Set up Prisma and connect your PostgreSQL database
+
+- `npm install prisma --save-dev`
+- `npx prisma init`
+- set .env and docker-compose.yml
+
+## Create your database schema with Prisma
+
+- `npx prisma db push`
+- `npx prisma studio`
+
+## Install and generate Prisma Client
+
+- `npm install @prisma/client`
+- `npx prisma generate`
+- `mkdir lib && touch lib/prisma.ts`
